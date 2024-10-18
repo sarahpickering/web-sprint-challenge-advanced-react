@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // Suggested initial states
 const initialMessage = ''
@@ -7,12 +7,15 @@ const initialSteps = 0
 const initialIndex = 4 // the index the "B" is at
 
 export default function AppFunctional(props) {
-  // THE FOLLOWING HELPERS ARE JUST RECOMMENDATIONS.
-  // You can delete them and build your own logic from scratch.
+  const [index, setIndex] = useState(initialIndex)
+  const [steps, setSteps] = useState(initialSteps)
+  const [email, setEmail] = useState(initialEmail)
+  const [message, setMessage] = useState(initialMessage)
+  const [coords, setCoords] = useState({x:2, y:2})
 
   function getXY() {
-    // It it not necessary to have a state to track the coordinates.
-    // It's enough to know what index the "B" is at, to be able to calculate them.
+   
+
   }
 
   function getXYMessage() {
